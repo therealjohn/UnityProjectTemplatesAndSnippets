@@ -13,13 +13,8 @@
     </Header>
     <Snippet>
       <Code Language="csharp">
-        <![CDATA[[SerializeField]
-private $type$ $field$;
-
-public $type$ $property$
-{
-  get { return $field$; }
-}      
+        <![CDATA[[SerializeField]private $type$ $field$;
+public $type$ $property$ => $field$;      
 $end$]]>
       </Code>
       <Imports>
