@@ -4,12 +4,18 @@
         <Identity Id="26519a88-4722-4617-89e9-bc64ea7587b9" Version="1.0" Language="en-US" Publisher="John Miller" />
         <DisplayName>Unity File Templates and Snippets</DisplayName>
         <Description xml:space="preserve">File item templates and snippets for Unity projects.</Description>
+        <License>LICENSE.txt</License>
+        <ReleaseNotes>RELEASENOTES.txt</ReleaseNotes>
+        <PreviewImage>preview.png</PreviewImage>
+        <Tags>unity,game,template,snippet</Tags>
+        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
     </Installation>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Unity" Version="[16.0.28315.86,17.0)" DisplayName="Visual Studio Tools for Unity" />
     </Prerequisites>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.ItemTemplate" Path="Output\ItemTemplates" />

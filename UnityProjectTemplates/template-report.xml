@@ -15,7 +15,7 @@
   </ItemTemplates>
   <ProjectTemplates />
   <Snippets>
-    <Snippet Title="Unity Coroutine" Description="Code snippet for coroutine method" Shortcut="cor" Path="Snippets\Unity\monobehaviour.snippet" />
+    <Snippet Title="Unity MonoBehaviour" Description="Code snippet for a MonoBehaviour class" Shortcut="monobehaviour" Path="Snippets\Unity\monobehaviour.snippet" />
     <Snippet Title="UnityTest method" Description="Code snippet for UnityTest method" Shortcut="utest" Path="Snippets\Unity\unity-test.snippet" />
     <Snippet Title="Unity MenuItem" Description="Code snippet for Unity MenuItem and method" Shortcut="menuitem" Path="Snippets\Unity\menu-item.snippet" />
     <Snippet Title="Unity CreateAssetMenu attribute" Description="Code snippet for Unity CreateAssetMenu attribute" Shortcut="assetmenu" Path="Snippets\Unity\create-asset-menu.snippet" />

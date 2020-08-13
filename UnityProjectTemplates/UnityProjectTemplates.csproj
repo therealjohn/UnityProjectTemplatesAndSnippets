@@ -153,6 +153,18 @@
     <Content Include="ItemTemplates\Shaders\Unlit\_preprocess.xml" />
     <Content Include="ItemTemplates\Shaders\Surface\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Shaders\Surface\_preprocess.xml" />
+    <Content Include="LICENSE.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="preview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="RELEASENOTES.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="snippets.pkgdef">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>

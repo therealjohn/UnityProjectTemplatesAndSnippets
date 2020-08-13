@@ -3,32 +3,41 @@
     xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>Unity Coroutine</Title>
-      <Shortcut>cor</Shortcut>
-      <Description>Code snippet for coroutine method</Description>
+      <Title>Unity MonoBehaviour</Title>
+      <Shortcut>monobehaviour</Shortcut>
+      <Description>Code snippet for a MonoBehaviour class</Description>
       <Author>John Miller</Author>
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Code Language="csharp" Kind="method decl">
-        <![CDATA[IEnumerator $name$()
+      <Code Language="csharp">
+        <![CDATA[public class $name$ : MonoBehaviour
 {
-  $end$
-  yield return null;
+    // Use this for initialization
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 }]]>
       </Code>
       <Imports>
         <Import>
-          <Namespace>System.Collections</Namespace>
+          <Namespace>UnityEngine</Namespace>
         </Import>
       </Imports>
       <Declarations>
         <Literal>
           <ID>name</ID>
-          <ToolTip>Method name</ToolTip>
-          <Default>MyCoroutine</Default>
+          <ToolTip>Class name</ToolTip>
+          <Default>MyMonoBehaviour</Default>
         </Literal>
       </Declarations>
     </Snippet>

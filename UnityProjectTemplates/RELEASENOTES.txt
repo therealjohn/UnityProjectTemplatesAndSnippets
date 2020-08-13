@@ -1,0 +1,29 @@
+#1.0 - Initial release
+
+##Project templates for Unity-specific files
+- MonoBehaviour
+- ScriptableObject
+- StateMachineBehaviour
+- UnityTestCase
+- Compute Shader
+- ImageEffect Shader
+- RayTracing Shader
+- Surface Shader
+- Unlit Shader
+- IComponentData struct for ECS
+- SystemBase class for ECS
+
+##Snippets for Unity
+- Coroutine method (cor)
+- [AssetMenu] (assetmenu)
+- Debug.Log() (log)
+- Debug.LogWarning() (logwarning)
+- Debug.LogError() (logerror)
+- Debug.LogException() (logexception)
+- [MenuItem] (menuitem)
+- MonoBehaviour (monobehaviour)
+- [RequireComponent] (reqcomp)
+- Private field with [SerializeField] (sfield)
+- Property with backing field and [SerializeField] (sprop)
+- MonoBehaviour singleton (usingleton)
+- [UnityTest] coroutine method for unit testing (utest)
