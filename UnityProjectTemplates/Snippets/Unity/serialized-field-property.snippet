@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unity Property with a backing Unity serialized field</Title>
+      <Shortcut>sprop</Shortcut>
+      <Description>Code snippet for a property with a backing Unity serialized field</Description>
+      <Author>John Miller</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp">
+        <![CDATA[[SerializeField]
+private $type$ $field$;
+
+public $type$ $property$
+{
+  get { return $field$; }
+}      
+$end$]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>UnityEngine</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Property type</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>property</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>MyProperty</Default>
+        </Literal>
+        <Literal>
+          <ID>field</ID>
+          <ToolTip>The variable backing this property</ToolTip>
+          <Default>myVar</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

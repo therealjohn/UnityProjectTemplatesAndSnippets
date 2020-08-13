@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <TemplateID>Microsoft.Unity.UnityTestCase</TemplateID>
+    <DefaultName>NewUnityTestCase.cs</DefaultName>
+    <Name>Unity Test Case</Name>
+    <Description>Creates a new class with default items for unit testing with Unity.</Description>
+    <SortOrder>4</SortOrder>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4515" />
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>    
+    <AppliesTo>Unity + CSharp</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">NewUnityTestCase.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+

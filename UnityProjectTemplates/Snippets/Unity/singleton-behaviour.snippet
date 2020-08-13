@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unity Property and static field for singleton pattern in MonoBehaviours</Title>
+      <Shortcut>usingleton</Shortcut>
+      <Description>Code snippet for a property and static field for singleton pattern</Description>
+      <Author>John Miller</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp">
+        <![CDATA[private static $type$ $field$;
+
+public static $type$ $property$
+{
+  get { return $field$; }
+}
+
+void Awake()
+{
+  if($field$ == null)
+    $field$ = this;
+  else
+  {
+    Debug.LogWarning($"Singleton for {this.GetType().Name} already exists.");
+    Destroy(this.gameObject);
+  }
+}
+$end$]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>UnityEngine</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Property type</ToolTip>
+          <Default>int</Default>
+        </Literal>
+        <Literal>
+          <ID>property</ID>
+          <ToolTip>Property name</ToolTip>
+          <Default>Instance</Default>
+        </Literal>
+        <Literal>
+          <ID>field</ID>
+          <ToolTip>The variable backing this property</ToolTip>
+          <Default>instance</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

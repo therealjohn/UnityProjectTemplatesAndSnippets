@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unity Coroutine</Title>
+      <Shortcut>cor</Shortcut>
+      <Description>Code snippet for coroutine method</Description>
+      <Author>John Miller</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Kind="method decl">
+        <![CDATA[IEnumerator $name$()
+{
+  $end$
+  yield return null;
+}]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>System.Collections</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip>Method name</ToolTip>
+          <Default>MyCoroutine</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

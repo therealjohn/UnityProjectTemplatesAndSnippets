@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <TemplateID>Microsoft.Unity.MonoBehaviour</TemplateID>
+    <DefaultName>NewMonoBehaviour.cs</DefaultName>
+    <Name>Unity MonoBehaviour</Name>
+    <Description>Creates a new MonoBehaviour class.</Description>
+    <SortOrder>1</SortOrder>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4515" />
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>    
+    <AppliesTo>Unity + CSharp</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">NewMonoBehaviour.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+

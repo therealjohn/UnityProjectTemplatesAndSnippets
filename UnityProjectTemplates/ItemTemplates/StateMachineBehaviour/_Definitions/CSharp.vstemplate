@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <TemplateID>Microsoft.Unity.StateMachineBehaviour</TemplateID>
+    <DefaultName>NewStateMachineBehaviour.cs</DefaultName>
+    <Name>Unity StateMachineBehaviour</Name>
+    <Description>Creates a new StateMachineBehaviour class.</Description>
+    <SortOrder>3</SortOrder>
+    <Icon Package="{FAE04EC1-301F-11d3-BF4B-00C04F79EFBC}" ID="4515" />
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>    
+    <AppliesTo>Unity + CSharp</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true">NewStateMachineBehaviour.cs</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+

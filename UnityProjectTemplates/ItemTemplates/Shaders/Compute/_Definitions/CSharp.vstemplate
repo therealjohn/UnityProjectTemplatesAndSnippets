@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <TemplateID>Microsoft.Unity.ComputeShader</TemplateID>
+    <DefaultName>NewComputeShader.compute</DefaultName>
+    <Name>Unity Compute Shader</Name>
+    <Description>Creates a new compute shader file.</Description>
+    <SortOrder>23</SortOrder>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>    
+    <AppliesTo>Unity + CSharp</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem>NewComputeShader.compute</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+

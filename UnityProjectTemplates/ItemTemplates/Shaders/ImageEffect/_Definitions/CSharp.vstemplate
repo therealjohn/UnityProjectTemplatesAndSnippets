@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <TemplateID>Microsoft.Unity.ImageEffectShader</TemplateID>
+    <DefaultName>NewImageEffectShader.shader</DefaultName>
+    <Name>Unity Image Effect Shader</Name>
+    <Description>Creates a new image effect shader file.</Description>
+    <SortOrder>22</SortOrder>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>    
+    <AppliesTo>Unity + CSharp</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem>NewImageEffectShader.shader</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+

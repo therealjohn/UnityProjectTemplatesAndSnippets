@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unity Require Component</Title>
+      <Shortcut>reqcomp</Shortcut>
+      <Description>Code snippet for [RequireComponent]</Description>
+      <Author>John Miller</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp">
+        <![CDATA[[RequireComponent(typeof($type$))]$end$]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>UnityEngine</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>type</ID>
+          <ToolTip>Component type</ToolTip>
+          <Default>Transform</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

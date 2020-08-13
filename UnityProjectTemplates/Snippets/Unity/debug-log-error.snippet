@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unity Debug Log Error</Title>
+      <Shortcut>logerror</Shortcut>
+      <Description>Code snippet for a Unity console error log message</Description>
+      <Author>John Miller</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp" Kind="method body">
+        <![CDATA[Debug.LogError("$log$");
+$end$]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>UnityEngine</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>log</ID>
+          <ToolTip>The message to log</ToolTip>
+          <Default>Hello World</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

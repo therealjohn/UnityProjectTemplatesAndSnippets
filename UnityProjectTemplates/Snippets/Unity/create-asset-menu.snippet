@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Unity CreateAssetMenu attribute</Title>
+      <Shortcut>assetmenu</Shortcut>
+      <Description>Code snippet for Unity CreateAssetMenu attribute</Description>
+      <Author>John Miller</Author>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Code Language="csharp">
+        <![CDATA[[CreateAssetMenu(fileName = "$filename$", menuName = "$menuname$", order = $order$)]]]>
+      </Code>
+      <Imports>
+        <Import>
+          <Namespace>UnityEngine</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal>
+          <ID>filename</ID>
+          <ToolTip>File name</ToolTip>
+          <Default>MyAssetFile</Default>
+        </Literal>
+        <Literal>
+          <ID>menuname</ID>
+          <ToolTip>Menu name</ToolTip>
+          <Default>MyAssetFile</Default>
+        </Literal>
+        <Literal>
+          <ID>order</ID>
+          <ToolTip>Order in the menu</ToolTip>
+          <Default>1</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

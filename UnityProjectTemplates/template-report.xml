@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TemplateReport>
+  <ItemTemplates>
+    <ItemTemplate Path="ItemTemplates\Shaders\Compute\_Definitions\CSharp.vstemplate" Name="Unity Compute Shader" Description="Creates a new compute shader file." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\ECS\ComponentData\_Definitions\CSharp.vstemplate" Name="Unity Entity Component Data" Description="Creates a new IComponentData struct." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\ECS\System\_Definitions\CSharp.vstemplate" Name="Unity Entity Component System" Description="Creates a new SystemBase class." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Shaders\ImageEffect\_Definitions\CSharp.vstemplate" Name="Unity Image Effect Shader" Description="Creates a new image effect shader file." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\MonoBehaviour\_Definitions\CSharp.vstemplate" Name="Unity MonoBehaviour" Description="Creates a new MonoBehaviour class." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Shaders\RayTracing\_Definitions\CSharp.vstemplate" Name="Unity Ray Trace Shader" Description="Creates a new ray tracing shader file." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\ScriptableObject\_Definitions\CSharp.vstemplate" Name="Unity ScriptableObject" Description="Creates a new ScriptableObject class." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\StateMachineBehaviour\_Definitions\CSharp.vstemplate" Name="Unity StateMachineBehaviour" Description="Creates a new StateMachineBehaviour class." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Shaders\Surface\_Definitions\CSharp.vstemplate" Name="Unity Surface Shader" Description="Creates a new surface shader file." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\UnityTestCase\_Definitions\CSharp.vstemplate" Name="Unity Test Case" Description="Creates a new class with default items for unit testing with Unity." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\Shaders\Unlit\_Definitions\CSharp.vstemplate" Name="Unity Unlit Shader" Description="Creates a new unlit shader file." ProjectType="CSharp" ProjectSubType="" />
+  </ItemTemplates>
+  <ProjectTemplates />
+  <Snippets>
+    <Snippet Title="Unity Coroutine" Description="Code snippet for coroutine method" Shortcut="cor" Path="Snippets\Unity\monobehaviour.snippet" />
+    <Snippet Title="UnityTest method" Description="Code snippet for UnityTest method" Shortcut="utest" Path="Snippets\Unity\unity-test.snippet" />
+    <Snippet Title="Unity MenuItem" Description="Code snippet for Unity MenuItem and method" Shortcut="menuitem" Path="Snippets\Unity\menu-item.snippet" />
+    <Snippet Title="Unity CreateAssetMenu attribute" Description="Code snippet for Unity CreateAssetMenu attribute" Shortcut="assetmenu" Path="Snippets\Unity\create-asset-menu.snippet" />
+    <Snippet Title="Unity Debug Log Exception" Description="Code snippet for a Unity console exception log message" Shortcut="logexception" Path="Snippets\Unity\debug-log-exception.snippet" />
+    <Snippet Title="Unity Debug Log Error" Description="Code snippet for a Unity console error log message" Shortcut="logerror" Path="Snippets\Unity\debug-log-error.snippet" />
+    <Snippet Title="Unity Debug Log Info" Description="Code snippet for a Unity console info log message" Shortcut="log" Path="Snippets\Unity\debug-log-info.snippet" />
+    <Snippet Title="Unity Debug Log Warning" Description="Code snippet for a Unity console warning log message" Shortcut="logwarning" Path="Snippets\Unity\debug-log-warning.snippet" />
+    <Snippet Title="Unity Require Component" Description="Code snippet for [RequireComponent]" Shortcut="reqcomp" Path="Snippets\Unity\require-component.snippet" />
+    <Snippet Title="Unity Property and static field for singleton pattern in MonoBehaviours" Description="Code snippet for a property and static field for singleton pattern" Shortcut="usingleton" Path="Snippets\Unity\singleton-behaviour.snippet" />
+    <Snippet Title="Unity Property with a backing Unity serialized field" Description="Code snippet for a property with a backing Unity serialized field" Shortcut="sprop" Path="Snippets\Unity\serialized-field-property.snippet" />
+    <Snippet Title="Unity Serialized Field" Description="Code snippet for a private field with [SerializedField]" Shortcut="sfield" Path="Snippets\Unity\serialized-field.snippet" />
+    <Snippet Title="Unity Coroutine" Description="Code snippet for coroutine method" Shortcut="cor" Path="Snippets\Unity\coroutine.snippet" />
+  </Snippets>
+</TemplateReport>

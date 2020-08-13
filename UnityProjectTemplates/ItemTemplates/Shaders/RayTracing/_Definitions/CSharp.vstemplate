@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <TemplateID>Microsoft.Unity.RayTraceShader</TemplateID>
+    <DefaultName>NewRayTracingShader.raytrace</DefaultName>
+    <Name>Unity Ray Trace Shader</Name>
+    <Description>Creates a new ray tracing shader file.</Description>
+    <SortOrder>25</SortOrder>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>    
+    <AppliesTo>Unity + CSharp</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem>NewRayTracingShader.raytrace</ProjectItem>
+  </TemplateContent>
+</VSTemplate>
+
