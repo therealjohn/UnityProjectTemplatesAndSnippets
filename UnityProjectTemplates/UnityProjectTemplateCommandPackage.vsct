@@ -20,6 +20,8 @@
   <!--This header contains the command ids for the menus provided by the shell. -->
   <Extern href="vsshlids.h" />
 
+  <Include href="KnownImageIds.vsct"/>
+  
   <!--The Commands section is where commands, menus, and menu groups are defined.
       This section uses a Guid to identify the package that provides the command defined inside it. -->
   <Commands package="guidUnityProjectTemplatesCommandPackage">
@@ -31,49 +33,132 @@
     group; your package should define its own command set in order to avoid collisions
     with command ids defined by other packages. -->
 
-    <!-- In this section you can define new menu groups. A menu group is a container for
-         other menus or buttons (commands); from a visual point of view you can see the
-         group as the part of a menu contained between two lines. The parent of a group
-         must be a menu. -->
-    <!--<Groups>
-      <Group guid="guidUnityProjectTemplatesCommandPackageCmdSet" id="UnityProjectTemplatesMenuGroup" priority="0x0600">
+    <Groups>
+      <Group guid="guidUnityNewScriptCmdSet" id="ScriptMenuGroup" priority="0x0">
         <Parent guid="guidSHLMainMenu" id="IDM_VS_CSCD_PROJECT_ADD" />
       </Group>
-    </Groups>-->
-
-    <!--Buttons section. -->
-    <!--This section defines the elements the user can interact with, like a menu command or a button
-        or combo box in a toolbar. -->
-    <!--<Buttons>-->
-      <!--To define a menu group you have to specify its ID, the parent menu and its display priority.
-          The command is visible and enabled by default. If you need to change the visibility, status, etc, you can use
-          the CommandFlag node.
-          You can add more than one CommandFlag node e.g.:
-              <CommandFlag>DefaultInvisible</CommandFlag>
-              <CommandFlag>DynamicVisibility</CommandFlag>
-          If you do not want an image next to your command, remove the Icon node /> -->
-    <!--</Buttons>-->
-
-    <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
-    <!--<Bitmaps>-->
-      <!--  The bitmap id is defined in a way that is a little bit different from the others:
-            the declaration starts with a guid for the bitmap strip, then there is the resource id of the
-            bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
-            inside a button definition. An important aspect of this declaration is that the element id
-            must be the actual index (1-based) of the bitmap inside the bitmap strip. -->      
-    <!--</Bitmaps>-->
+      <Group guid="guidUnityNewTestCmdSet" id="TestMenuGroup" priority="0x001">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CSCD_PROJECT_ADD" />
+      </Group>
+      <Group guid="guidUnityNewShaderCmdSet" id="ShaderMenuGroup" priority="0x002">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_CSCD_PROJECT_ADD" />
+      </Group>
+    </Groups>    
+    <Buttons>
+      <Button guid="guidUnityNewScriptCmdSet" id="cmdidNewMonoBehaviourCommand" priority="0x0100" type="Button">
+        <Parent guid="guidUnityNewScriptCmdSet" id="ScriptMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="CSFileNode" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Mono Behaviour</ButtonText>
+        </Strings>
+      </Button>      
+      <Button guid="guidUnityNewScriptCmdSet" id="cmdidNewScriptableObjectCommand" priority="0x0200" type="Button">
+        <Parent guid="guidUnityNewScriptCmdSet" id="ScriptMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="CSFileNode" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Scriptable Object</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidUnityNewScriptCmdSet" id="cmdidNewStateMachineBehaviourCommand" priority="0x0300" type="Button">
+        <Parent guid="guidUnityNewScriptCmdSet" id="ScriptMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="CSFileNode" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>State Machine Behaviour</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidUnityNewTestCmdSet" id="cmdidNewUnityTestCommand" priority="0x0100" type="Button">
+        <Parent guid="guidUnityNewTestCmdSet" id="TestMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="CSCodeTest" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Unity Test</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidUnityNewShaderCmdSet" id="cmdidNewSurfaceShaderCommand" priority="0x0100" type="Button">
+        <Parent guid="guidUnityNewShaderCmdSet" id="ShaderMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="Shader" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Surface Shader</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidUnityNewShaderCmdSet" id="cmdidNewImageEffectShaderCommand" priority="0x0200" type="Button">
+        <Parent guid="guidUnityNewShaderCmdSet" id="ShaderMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="Shader" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Image Effect Shader</ButtonText>
+        </Strings>
+      </Button>
+      <Button guid="guidUnityNewShaderCmdSet" id="cmdidNewUnlitShaderCommand" priority="0x0300" type="Button">
+        <Parent guid="guidUnityNewShaderCmdSet" id="ShaderMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="ShaderUnit" />
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Unlit Shader</ButtonText>
+        </Strings>
+      </Button>  
+    </Buttons>
   </Commands>
 
   <Symbols>
     <!-- This is the package guid. -->
     <GuidSymbol name="guidUnityProjectTemplatesCommandPackage" value="{59e25f6f-99d2-4be2-bf04-8ec839c7665a}" />
 
-    <!-- This is the guid used to group the menu commands together -->
-    <!--<GuidSymbol name="guidUnityProjectTemplatesCommandPackageCmdSet" value="{8a808c47-1856-4169-97c6-0de8717f3779}">
-      <IDSymbol name="UnityProjectTemplatesMenuGroup" value="0x1020" />
-      <IDSymbol name="cmdAddMonoBehaviour" value="0x0100" />
-      <IDSymbol name="cmdAddScriptableObject" value="0x0200" />
-    </GuidSymbol>-->
+    <GuidSymbol name="guidUnityTemplatesUIContext" value="{B83C6785-A21F-493B-B349-4168F63DE01E}" />
+  
+    <GuidSymbol name="guidUnityNewScriptCmdSet" value="{413895c8-48aa-4630-b907-c67ee52c0368}">
+      <IDSymbol name="ScriptMenuGroup" value="4128" />
+      <IDSymbol name="cmdidNewMonoBehaviourCommand" value="0x100" />
+      <IDSymbol name="cmdidNewScriptableObjectCommand" value="0x101" />
+      <IDSymbol name="cmdidNewStateMachineBehaviourCommand" value="0x103" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidUnityNewTestCmdSet" value="{dea55eda-7d0c-4a18-9bd1-5d91d7636a83}">
+      <IDSymbol name="TestMenuGroup" value="4129" />
+      <IDSymbol name="cmdidNewUnityTestCommand" value="0x102" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidUnityNewShaderCmdSet" value="{c1325a24-e2d0-4186-92f6-0ba858a50f17}">
+      <IDSymbol name="ShaderMenuGroup" value="4130" />
+      <IDSymbol name="cmdidNewSurfaceShaderCommand" value="0x104" />
+      <IDSymbol name="cmdidNewImageEffectShaderCommand" value="0x105" />
+      <IDSymbol name="cmdidNewUnlitShaderCommand" value="0x106" />
+    </GuidSymbol>
 
   </Symbols>
+
+  <VisibilityConstraints>
+    <VisibilityItem guid="guidUnityNewScriptCmdSet"
+                    id="cmdidNewMonoBehaviourCommand" context="guidUnityTemplatesUIContext" />
+    <VisibilityItem guid="guidUnityNewScriptCmdSet"
+                    id="cmdidNewScriptableObjectCommand" context="guidUnityTemplatesUIContext" />
+    <VisibilityItem guid="guidUnityNewScriptCmdSet"
+                    id="cmdidNewStateMachineBehaviourCommand" context="guidUnityTemplatesUIContext" />
+    <VisibilityItem guid="guidUnityNewTestCmdSet"
+                    id="cmdidNewUnityTestCommand" context="guidUnityTemplatesUIContext" />
+    <VisibilityItem guid="guidUnityNewShaderCmdSet"
+                    id="cmdidNewSurfaceShaderCommand" context="guidUnityTemplatesUIContext" />
+    <VisibilityItem guid="guidUnityNewShaderCmdSet"
+                    id="cmdidNewImageEffectShaderCommand" context="guidUnityTemplatesUIContext" />
+    <VisibilityItem guid="guidUnityNewShaderCmdSet"
+                    id="cmdidNewUnlitShaderCommand" context="guidUnityTemplatesUIContext" />
+  </VisibilityConstraints>
 </CommandTable>

@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="UnityImageEffectShader" xml:space="preserve">
+    <value>Unity Image Effect Shader</value>
+  </data>
+  <data name="UnityMonoBehaviour" xml:space="preserve">
+    <value>Unity MonoBehaviour</value>
+  </data>
+  <data name="UnityScriptableObject" xml:space="preserve">
+    <value>Unity ScriptableObject</value>
+  </data>
+  <data name="UnityStateMachineBehaviour" xml:space="preserve">
+    <value>Unity StateMachineBehaviour</value>
+  </data>
+  <data name="UnitySurfaceShader" xml:space="preserve">
+    <value>Unity Surface Shader</value>
+  </data>
+  <data name="UnityTemplateCategory" xml:space="preserve">
+    <value>Unity</value>
+  </data>
+  <data name="UnityTestCase" xml:space="preserve">
+    <value>Unity Test Case</value>
+  </data>
+  <data name="UnityUnlitShader" xml:space="preserve">
+    <value>Unity Unlit Shader</value>
+  </data>
 </root>

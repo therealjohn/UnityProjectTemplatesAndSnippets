@@ -54,10 +54,17 @@
     <TemplateBuilderTargets Condition=" '$(TemplateBuilderTargets)'=='' ">$([System.IO.Path]::GetFullPath( $(MSBuildProjectDirectory)\..\packages\TemplateBuilder.1.1.6.1\tools\ligershark.templates.targets ))</TemplateBuilderTargets>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CommandId.cs" />
+    <Compile Include="Guids.cs" />
     <Compile Include="ItemTemplates\ECS\ComponentData\NewComponentData.cs" />
     <Compile Include="ItemTemplates\ECS\System\NewEntityComponentSystem.cs" />
     <Compile Include="ItemTemplates\MonoBehaviour\NewMonoBehaviour.cs" />
     <Compile Include="ItemTemplates\ScriptableObject\NewScriptableObject.cs" />
+    <Compile Include="Resources\Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
     <Compile Include="UnityProjectTemplateCommandPackage.cs" />
     <None Include="ItemTemplates\Shaders\Compute\NewComputeShader.compute" />
     <None Include="ItemTemplates\Shaders\ImageEffect\NewImageEffectShader.shader" />
@@ -124,9 +131,7 @@
       <HintPath>..\packages\TemplateBuilder.1.1.6.1\lib\TemplateBuilder.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="ItemTemplates\Shaders\Surface\Icon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -169,14 +174,14 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <EmbeddedResource Include="Resources\Strings.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Snippets\Unity\coroutine.snippet">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <EmbeddedResource Include="VSPackage.resx">
-      <MergeWithCTO>true</MergeWithCTO>
-      <ManifestResourceName>VSPackage</ManifestResourceName>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <VSCTCompile Include="UnityProjectTemplateCommandPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
