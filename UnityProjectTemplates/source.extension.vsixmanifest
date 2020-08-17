@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="26519a88-4722-4617-89e9-bc64ea7587b9" Version="1.0" Language="en-US" Publisher="John Miller" />
+        <Identity Id="26519a88-4722-4617-89e9-bc64ea7587b9" Version="1.1" Language="en-US" Publisher="John Miller" />
         <DisplayName>Unity File Templates and Snippets</DisplayName>
         <Description xml:space="preserve">File item templates and snippets for Unity projects.</Description>
         <License>LICENSE.txt</License>

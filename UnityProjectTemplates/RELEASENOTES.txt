@@ -1,3 +1,6 @@
+#1.1 - New Item menu options
+New menu items for common files are availble when you right-click a Project or Folder in the Solution Explorer. Choose Add to see a list of Unity-specific options.
+
 #1.0 - Initial release
 
 ##Project templates for Unity-specific files
