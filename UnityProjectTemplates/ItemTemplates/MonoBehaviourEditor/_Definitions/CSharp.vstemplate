@@ -12,7 +12,7 @@
     <AppliesTo>Unity + CSharp</AppliesTo>
   </TemplateData>
   <TemplateContent>
-    <ProjectItem ReplaceParameters="true">NewMonoBehaviourEditor.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true">$fileinputname$Editor.cs</ProjectItem>
   </TemplateContent>
 </VSTemplate>
 

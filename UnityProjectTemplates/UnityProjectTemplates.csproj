@@ -58,6 +58,7 @@
     <Compile Include="Guids.cs" />
     <Compile Include="ItemTemplates\ECS\ComponentData\NewComponentData.cs" />
     <Compile Include="ItemTemplates\ECS\System\NewEntityComponentSystem.cs" />
+    <Compile Include="ItemTemplates\MonoBehaviourEditor\NewMonoBehaviourEditor.cs" />
     <Compile Include="ItemTemplates\MonoBehaviour\NewMonoBehaviour.cs" />
     <Compile Include="ItemTemplates\ScriptableObject\NewScriptableObject.cs" />
     <Compile Include="Resources\Strings.Designer.cs">
@@ -145,6 +146,8 @@
     <EmbeddedResource Include="ItemTemplates\Shaders\Compute\Icon.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="ItemTemplates\MonoBehaviourEditor\_Definitions\CSharp.vstemplate" />
+    <Content Include="ItemTemplates\MonoBehaviourEditor\_preprocess.xml" />
     <Content Include="ItemTemplates\Shaders\Compute\_Definitions\CSharp.vstemplate" />
     <Content Include="ItemTemplates\Shaders\Compute\_preprocess.xml" />
     <Content Include="ItemTemplates\Shaders\ImageEffect\_Definitions\CSharp.vstemplate" />
