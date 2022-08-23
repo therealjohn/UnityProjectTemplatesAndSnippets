@@ -6,6 +6,7 @@
     <ItemTemplate Path="ItemTemplates\ECS\System\_Definitions\CSharp.vstemplate" Name="Unity Entity Component System" Description="Creates a new SystemBase class." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\Shaders\ImageEffect\_Definitions\CSharp.vstemplate" Name="Unity Image Effect Shader" Description="Creates a new image effect shader file." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\MonoBehaviour\_Definitions\CSharp.vstemplate" Name="Unity MonoBehaviour" Description="Creates a new MonoBehaviour class." ProjectType="CSharp" ProjectSubType="" />
+    <ItemTemplate Path="ItemTemplates\MonoBehaviourEditor\_Definitions\CSharp.vstemplate" Name="Unity MonoBehaviour Editor" Description="Creates a new Editor script for a MonoBehaviour class." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\Shaders\RayTracing\_Definitions\CSharp.vstemplate" Name="Unity Ray Trace Shader" Description="Creates a new ray tracing shader file." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\ScriptableObject\_Definitions\CSharp.vstemplate" Name="Unity ScriptableObject" Description="Creates a new ScriptableObject class." ProjectType="CSharp" ProjectSubType="" />
     <ItemTemplate Path="ItemTemplates\StateMachineBehaviour\_Definitions\CSharp.vstemplate" Name="Unity StateMachineBehaviour" Description="Creates a new StateMachineBehaviour class." ProjectType="CSharp" ProjectSubType="" />
